@@ -6,7 +6,7 @@
 
 void createProcessTree(int height,int currHeight){
     if (currHeight == height) {
-        // printf("Leaf: Process ID = %d, Parent ID = %d\n", getpid(), getppid());
+        printf("Leaf: Process ID = %d, Parent ID = %d\n", getpid(), getppid());
         exit(0);
     }
     for(int i=0;i<2;i++){
